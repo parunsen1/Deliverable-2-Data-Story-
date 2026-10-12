@@ -1,28 +1,33 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8">
+<html lang="en">
+   
+    <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Data Story</title><link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="story-header">
         <p class="eyebrow">Data Story</p>
-        <h1>Have summer nights near Phoenix-Mesa Gateway Airport grown warmer since 2016, and does the pattern fit climate change and urban heat?</h1>
-        <p class="lede"> In this analysis, we will explore the relationship between temperature changes and urban heat islands in the Phoenix-Mesa Gateway Airport area. In Phoenix, afternoon temperatures can exceed over 100 degrees, but what about at night? When temperatures remain high. This story will examine hourly weather observations from the Phoenix Williams Gateway Airport comparing the summer of 2026 through 2025. We will determine whether summer nights have grown warmer and whether this might have a correlation with climate change and urban heat. The data points towards yes where the average daily low rose about 1.8 degrees Fahrenheit between the first five summers and the last five summers while daytime high had minimal differences.</p>
+        <h1>Have summer nights near Phoenix Williams Gateway Airport grown warmer since 2016, and does the pattern fit climate change and urban heat?</h1>
+        <p class="lede"> In this analysis, we will explore the relationship between temperature changes and urban heat islands in the Phoenix Williams Gateway Airport area. In Phoenix, afternoon temperatures can exceed over 100 degrees, but what about at night? When temperatures remain high over time, the urban heat island effect becomes more pronounced at night. EPA reports that hotter days, less night time cools adds to air pollution, health condition, breathing problems, heat stroke, and death. This story will examine hourly weather observations from the Phoenix Williams Gateway Airport comparing the summer of 2016 through 2025. We will determine whether summer nights have grown warmer and whether this might have a correlation with climate change and urban heat. The data points towards yes where the average daily low rose about 1.8 degrees Fahrenheit between the first five summers and the last five summers while daytime high had minimal differences.</p>
+        <p class="lede"></p>
+</header>
     <main>
         <section id="story-frame">
             <h2>D1 · Story Frame</h2>
-            <p> Data used within this data story comes from the NOAA Climate Database for Phoenix Williams Gateway Airport( WBAN:23104), which covers hourly observations from January 1, 2026 to August 25, 2925. To keep every year comparable, I used June 1st to August 24th for all of time values in the table. The Daily highs and lows are the highest and lowest hourly dry-bulb temperatures recorded during each day. A "warm night" was classified as a day with a low of 80 degrees Fahrenheit or higher. Futhermore, an analysis from one airport alone cannot seperate climate change from local urban heat effects. The SVG in d2 section was created using Microsoft Excel with the cited data source. </p>
+            <p> Data used within this data story comes from the NOAA NCEI Local Climatological Database for Phoenix Williams Gateway Airport(WBAN:23104), which covers hourly observations from January 1, 2016 to August 24, 2025. To keep every year comparable, I used June 1st to August 24th for all of time values in the table. The daily highs and lows are the highest and lowest hourly dry-bulb temperatures recorded during each day. A "warm night" was classified as a day with a low of 80 degrees Fahrenheit or higher. Futhermore, an analysis from one airport alone cannot seperate climate change from local urban heat effects. The SVG in D2 section was created using Microsoft Excel with the cited data source while the D4 SVG is handcoded. </p>
         </section>
         <section id="figures">
-            <h2>D2 · Editorial Figures</h2>
+            <h2>D2 · Graphs regarding Temperature Changes</h2>
             <div class="story-grid">
                 <figure>
-                    <img src="placeholder.svg" alt="Replace with a contextual alternative" width="800" height="450">
-                    <figcaption>Replace with a visible caption and source/credit.</figcaption>
+                    <img src="Picture2.svg" alt="Line chart of the daily average low temperature for each summer from 2016-2025. The chart ranges from 74 to 84 degrees Fahrenheit. There is a dashed line indicates the five year average of 77.9 degrees Fahrenheit for 2016-2020 and a slightly higher line for 2021-2025." width="800" height="450">
+                    <figcaption> Figure 1. Summer nights near Phoenix Williams Gateway Airport averaged about 1.8 degrees Fahrenheit warmer between the 2016-2025 period. Each of the point averages the daily lows from June 1st to August 24th and the y axis starts at the minimum of 74 degrees Fahrenheit. Source: NOAA NCEI Local Climatological Database; chart by Praghathi Arun </figcaption>
                 </figure>
                 <figure>
-                    <img src="placeholder.svg" alt="Replace with a contextual alternative" width="800" height="450">
-                    <figcaption>Replace with a visible caption and source/credit.</figcaption>
+                    <img src="warm nights.png" alt="Bar chart showcasing one green bar for each summer 2016-2025. This showcases how many days had a low of 80 degrees Fahrenheit or higher with each bar having its own value. The shortest bar is 28 in 2017 and teh tallest is 62 in 2024. Apart from those years, the other bars ranges between 35-47 days." width="800" height="450">
+                    <figcaption> Figure 2. Warm Nights averaging about 36 per summer in 2016-2020 and 46 in 2021-2025. A "Warm night" is a day which is recorded 80 degrees Fahrenheit or higher. Each summer covers 85 days (June 1st to August 24th).Source: NOAA NCEI Local Climatological Database; chart by Praghathi Arun </figcaption>
                 </figure>
             </div>
         </section>
@@ -30,66 +35,154 @@
             <h2>D3 · Accessible Data Table</h2>
             <div class="table-region" role="region" aria-label="Replace with a specific table label" tabindex="0">
                 <table>
-                    <caption>Replace with an accurate table caption</caption>
+                    <caption> Table 1. Summary of Summer heat at Phoenix Williams Gateway Airport (June 1st to August 24th)</caption>
                     <thead>
                         <tr>
-                            <th scope="col">Category</th>
-                            <th scope="col">Value A</th>
-                            <th scope="col">Value B</th>
-                            <th scope="col">Value C</th>
+                            <th scope="col">Summer</th>
+                            <th scope="col"> Avg  daily high (°F)</th>
+                            <th scope="col"> Avg daily low (°F) </th>
+                            <th scope="col"> Warm nights (low > 80°F) </th>
+                            <th scope="col"> Shares 85 days </th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row">Replace</th>
-                            <td>—</td>
-                            <td>—</td>
-                            <td>—</td>
+                            <th scope="row">2016</th>
+                            <td> 103.0</td>
+                            <td> 78.3 </td>
+                            <td> 36 </td>
+                            <td> 42% </td>
                         </tr>
                         <tr>
-                            <th scope="row">Replace</th>
-                            <td>—</td>
-                            <td>—</td>
-                            <td>—</td>
+                            <th scope="row">2017</th>
+                            <td>102.7</td>
+                            <td>76.6</td>
+                            <td>28</td>
+                            <td> 33% </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2018</th>
+                            <td> 103.0</td>
+                            <td> 78.4 </td>
+                            <td> 36 </td>
+                            <td> 42% </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2019</th>
+                            <td> 103.0</td>
+                            <td> 77.2 </td>
+                            <td> 36 </td>
+                            <td> 42% </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2020</th>
+                            <td> 106.1</td>
+                            <td> 79.1 </td>
+                            <td> 45 </td>
+                            <td> 53% </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2021</th>
+                            <td> 101.6</td>
+                            <td> 78.7 </td>
+                            <td> 36 </td>
+                            <td> 42% </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2022</th>
+                            <td> 102.4</td>
+                            <td> 79.8 </td>
+                            <td> 47 </td>
+                            <td> 55% </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2023</th>
+                            <td> 104.1</td>
+                            <td> 78.0 </td>
+                            <td> 41 </td>
+                            <td> 48% </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2024</th>
+                            <td> 106.0</td>
+                            <td> 82.3 </td>
+                            <td> 62 </td>
+                            <td> 73% </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2025</th>
+                            <td> 104.9</td>
+                            <td> 80.0 </td>
+                            <td> 44 </td>
+                            <td> 52% </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <p class="source-note">Add the data source and any transformation note.</p>
+            <p class="source-note"> 
+                <li> Source: NOAA NCEI Local Climatological Data, station WBAN:23104 ( Phoenix Williams Gateway Airport), order 4410167: about 122,000 rows of hourly observations from January 1, 2016 to August 25, 2025. </li>
+                <li> Note: The daily highs and lows are the highest and lowest hourly dry-bulb temperatures recorded during each day. A "warm night" was classified as a day with a low of 80 degrees Fahrenheit or higher. </li>
+                <li> Temperature values: Hourly dry-bulb temperatures in degrees was converted into yearly averages. Any reading that are flagged "s" in the data set was excluded.</li>
+                <li> Date window: Only June 1st through August 24th was used because the data file ends on August 25th.</li>
+                <li> The daily highs and lows might differ from the daily values because they came from hourly readings.</li>
+                <
+            </p>
         </section>
         <section id="vector-story">
             <h2>D4 · Responsive SVG</h2>
-            <svg class="story-graphic" viewBox="0 0 800 400" role="img" aria-labelledby="graphic-title graphic-desc">
-                <title id="graphic-title">Replace with a concise title</title>
-                <desc id="graphic-desc">Replace with an equivalent description of the meaningful comparison or pattern.</desc>
-                <rect class="graphic-surface" width="800" height="400"/>
-                <circle class="graphic-primary" cx="250" cy="200" r="120"/>
-                <circle class="graphic-accent" cx="560" cy="160" r="150"/>
-                <path class="graphic-line" d="M80 350H720"/>
-            </svg>
+            <figure class="figure">
+  <section id="vector-story">
+
+    <figure>
+        <svg class="story-graphic" viewBox="0 0 600 225" role="img"
+             aria-labelledby="warm-nights-title warm-nights-desc"
+             fill="currentColor" font-size="22">
+            <title id="warm-nights-title">Warm nights per summer, 2016-2020 vs. 2021-2025</title>
+            <desc id="warm-nights-desc">Two horizontal bars, each measured against 85 summer days (June 1 to August 24). From 2016 to 2020, an average of 36 nights had a low of 80°F or higher. From 2021 to 2025, the average was 46 nights.</desc>
+
+            <path d="M 30 10 A 20 20 0 1 0 30 50 A 25 25 0 0 1 30 10 Z" />
+            <text x="44" y="38">Warm nights per summer</text>
+
+            <rect class="graphic-accent" x="150" y="70" width="180" height="40" />
+            <rect class="graphic-accent" x="150" y="140" width="230" height="40" />
+
+            <rect class="graphic-line" fill="none" x="150" y="70" width="425" height="40" />
+            <rect class="graphic-line" fill="none" x="150" y="140" width="425" height="40" />
+
+            <text x="10" y="98">2016-2020</text>
+            <text x="340" y="98" font-weight="700">36 nights</text>
+            <text x="10" y="168">2021-2025</text>
+            <text x="390" y="168" font-weight="700">46 nights</text>
+            <text x="150" y="212">Out of 85 summer days</text>
+        </svg>
+        <figcaption>Warm nights increased from an average of 36 to 46 per summer. Source: <a href="#sources">NOAA NCEI Local Climatological Data</a>; graphic by Praghathi Arun.</figcaption>
+    </figure>
+</section>
+</figure>
         </section>
         <section id="documentation">
             <h2>D5-D6 · System and Documentation</h2>
            <h2 id="sources">Sources</h2>
 <ul class="source-list">
   <li>
-    National Centers for Environmental Information (NCEI). (2025).
-    <cite>Local climatological data station details: Phoenix Williams Gateway Airport, AZ US, WBAN:23104</cite>
-    4410149. Climate Data Online (CDO), National Climatic Data Center (NCDC), NOAA.
-    Retrieved 10 December 2026,from
-    <a href="https://www.ncei.noaa.gov/cdo-web/datasets/LCD/stations/WBAN:23104/detail">https://www.ncei.noaa.gov/cdo-web/datasets/LCD/stations/WBAN:23104/detail</a>
-  </li>
+  National Centers for Environmental Information (NCEI). (2025).
+  <cite>Local climatological data station details: Phoenix-Mesa Gateway Airport, AZ US, WBAN:23104</cite>
+  [Data set, order 4410167]. Climate Data Online (CDO), NOAA.
+  Retrieved October 11, 2026, from
+  <a href="https://www.ncei.noaa.gov/cdo-web/datasets/LCD/stations/WBAN:23104/detail">NOAA NCEI Local Climatological Data, station WBAN:23104</a>
+</li>
   <li>
-    United States Environmental Protection Agency. (2024, December 10).
-    <cite>What are heat islands? US EPA</cite>. 
-    <a href="https://www.epa.gov/heatislands/what-are-heat-islands">https://www.epa.gov/heatislands/what-are-heat-islands</a>
-  </li>
+  U.S. Environmental Protection Agency. (2026, August 18).
+  <cite>What are heat islands?</cite>
+  Retrieved October 11, 2026, from
+  <a href="https://www.epa.gov/heatislands/what-are-heat-islands">EPA: What are heat islands?</a>
+</li>
   <li>
   U.S. Environmental Protection Agency. (2017, January 17).
-    <cite>Climate change: Basic information</cite>
-    [Archived web page]. EPA 19 January 2017 Snapshot. Retrieved 10 December 2026, from
-    <a href="https://19january2017snapshot.epa.gov/climatechange/climate-change-basic-information_.html">https://19january2017snapshot.epa.gov/climatechange/climate-change-basic-information_.html</a>
-  </li>
+  <cite>Climate change: Basic information</cite>
+  [Archived web page]. Retrieved October 11, 2026, from
+  <a href="https://19january2017snapshot.epa.gov/climatechange/climate-change-basic-information_.html">EPA climate change basics (archived January 2017)</a>
+</li>
 
 </ul>
         </section>
